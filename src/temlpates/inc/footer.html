@@ -1,0 +1,101 @@
+<!-- Section: Footer -->
+<footer class="c-footer">
+	<div class="l-footer">
+		<div class="l-footer l-footer__inner">
+			<a href="hero" class="image">
+				<img src="assets/img/footer-logo.png" alt="logo">
+			</a>
+			<div class="text">
+				<p>Copyright © <span class="gtd-date-current-year"></span> Bitcoin Evolution. All Right Reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End of Section: Footer -->
+
+<!-- Scripts -->
+<script src="assets/js/vendor.min.js?v=1"></script>
+<script src="assets/js/main.min.js?v=1"></script>
+<!-- End of Scripts -->
+
+<script type="text/javascript">
+	startTimer();
+
+	function startTimer() {
+		var presentTime = document.getElementById('timer').innerHTML;
+		var timeArray = presentTime.split(/[:]+/);
+		var m = timeArray[0];
+		var s = checkSecond((timeArray[1] - 1));
+		if (s == 59) {
+			m = m - 1;
+		}
+		if (m < 0) {
+			return;
+		}
+
+		document.getElementById('timer').innerHTML = m + ":" + s;
+		setTimeout(startTimer, 1000);
+	}
+
+	function checkSecond(sec) {
+		if (sec < 10 && sec >= 0) {
+			sec = "0" + sec;
+		}
+		if (sec < 0) {
+			sec = "59";
+		}
+		return sec;
+	}
+</script>
+
+<!-- Funnels SDK Init -->
+<script data-src-type="RecaptchaJs" src="https://www.google.com/recaptcha/api.js?render=6Lc0rGgUAAAAAF94WpynKhzSE4K9xMoJgY98KdBE"></script>
+<script data-src-type="GtdSdkJs" src="../static/funnels-sdk/v1/dist/assets/js/main.min.js"></script>
+<script>
+	$(function () {
+		var gtdFunnelsSdk = new GtdFunnelsSdk({
+			language: 'es',
+			autoPasswordGeneration: true,
+			autoConnectForms: false,
+			optinsForm: {
+				successCallback: function (self, formEl, settings, response) {
+					$(settings.optinsForm.el).find(settings.optinsForm.formEl).hide();
+					$(settings.optinsForm.el).find(settings.optinsForm.successEl).show();
+					self.connectLeadsForm({}, {
+						id: response.data.id,
+						email: response.data.email,
+						fname: response.data.fname,
+						lname: response.data.lname
+					});
+					$('.gtd-form-step-1').hide();
+					$('.gtd-form-step-2').show();
+					settings.optinsForm.afterSubmit(formEl, settings);
+				}
+			},
+			leadsForm: {
+				successCallback: function (self, formEl, settings, response) {
+					$(formEl).find(settings.leadsForm.formEl).hide();
+					$(formEl).find(settings.leadsForm.successEl).show();
+					$('.gtd-form-step-2').hide();
+					$('.gtd-form-step-3').show();
+					settings.leadsForm.afterSubmit(formEl, settings);
+					if (getParameterByName('tp')) {
+						self.initTradingPlatform(formEl, settings, response);
+					} else {
+						if (settings.isLeadTyPageRedirect === true) {
+							self.initRedirectTyPage(settings, response);
+						} else {
+							self.initLeadPopup(settings, response);
+						}
+					}
+					settings.leadsForm.successCallbackCallback(self, formEl, settings);
+				}
+			}
+		});
+
+		gtdFunnelsSdk.connectOptinsForm();
+	});
+</script>
+
+</body>
+</html>
