@@ -1,0 +1,12 @@
+.c-section {
+	$root: &;
+	
+	//* Header
+	&--header {
+		#{$root} {
+			&__inner {
+			
+			}
+		}
+	}
+}
