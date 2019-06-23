@@ -141,6 +141,22 @@
 	&--h2 {
 		font-size: 40px;
 	}
+	
+	&--h4 {
+		color: $g-color-dark;
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.45px;
+		line-height: 18px;
+	}
+	
+	&--h5 {
+		font-size: 30px;
+		letter-spacing: 0.75px;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
 }
 
 .c-promo {
