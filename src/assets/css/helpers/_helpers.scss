@@ -1,3 +1,16 @@
 .h-color-primary {
 	color: $g-color-primary;
 }
+
+.h-border-l-primary {
+	border-left: 12px solid $g-color-primary;
+	padding-left: 12px;
+}
+
+.h-mb20 {
+	margin-bottom: 30px;
+}
+
+.h-pb20 {
+	padding-bottom: 30px;
+}

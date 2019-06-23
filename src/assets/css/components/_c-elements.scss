@@ -33,7 +33,7 @@
 		display: flex;
 		align-items: center;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
-		border-radius: 3px;
+		//border-radius: 3px;
 		
 		#{$root2} {
 			&__inner {
@@ -126,8 +126,6 @@
 }
 
 .c-text {
-	border-left: 12px solid $g-color-primary;
-	padding-left: 12px;
 	
 	&--title {
 		color: $g-color-dark;
@@ -142,5 +140,35 @@
 	
 	&--h2 {
 		font-size: 40px;
+	}
+}
+
+.c-promo {
+	width: 100%;
+	height: fit-content;
+	position: relative;
+	
+	img {
+		width: 100%;
+	}
+	
+	&--short {
+		height: 283px;
+		background-color: #dadad2;
+		
+		img {
+			height: 100%;
+		}
+	}
+	
+	&--long {
+		height: 520px;
+	}
+	
+	&__text {
+		position: absolute;
+		top: 25px;
+		padding: 16px 20px;
+		background-color: white;
 	}
 }
