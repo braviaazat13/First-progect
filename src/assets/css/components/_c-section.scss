@@ -3,9 +3,39 @@
 	
 	//* Header
 	&--header {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+		//border: 1px solid #ececec;
+	}
+	
+	//* Menu
+	&--menu {
 		#{$root} {
 			&__inner {
-			
+				ul {
+					padding: 0;
+					list-style-type: none;
+					display: flex;
+					justify-content: space-between;
+					max-width: 680px;
+					margin: 0 auto;
+					
+					li {
+						white-space: nowrap;
+						padding: 20px 0;
+						
+						a {
+							color: $g-color-dark;
+							font-size: 14px;
+							font-weight: 700;
+							line-height: 26px;
+							padding: 20px 0;
+							text-transform: uppercase;
+							&:hover {
+								color: #8f8f8f;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
