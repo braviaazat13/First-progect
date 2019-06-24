@@ -163,6 +163,15 @@
 	width: 100%;
 	height: fit-content;
 	position: relative;
+	display: block;
+	
+	&__text {
+		position: absolute;
+		top: 25px;
+		padding: 16px 20px;
+		background-color: white;
+		transition: 0.5s;
+	}
 	
 	img {
 		width: 100%;
@@ -175,16 +184,29 @@
 		img {
 			height: 100%;
 		}
+		
+		&:hover {
+			.c-promo__text {
+				height: 100%;
+				top: 0;
+				padding-top: 42px;
+				box-shadow: 3px -3px 6px 0px rgba(0,0,0,0.20);
+				background-color: rgba(255,255,255, 0.7);
+			}
+		}
 	}
 	
 	&--long {
-		height: 520px;
-	}
-	
-	&__text {
-		position: absolute;
-		top: 25px;
-		padding: 16px 20px;
-		background-color: white;
+		height: 525px;
+		
+		&:hover {
+			.c-promo__text {
+				height: 100%;
+				top: 0;
+				padding-top: 40px;
+				box-shadow: 3px -3px 6px 0px rgba(0,0,0,0.20);
+				background-color: rgba(255,255,255, 0.7);
+			}
+		}
 	}
 }
