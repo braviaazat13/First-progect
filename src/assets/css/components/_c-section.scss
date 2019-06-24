@@ -47,4 +47,13 @@
 	&--promo {
 	margin: 100px 0;
 	}
+	
+	//* Goods
+	&--goods {
+		>.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 }
