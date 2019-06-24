@@ -7,4 +7,72 @@
 	align-items: center;
 	justify-content: center;
 	@include general-transition;
+	
+	&--small {
+		height: 38px;
+		padding: 0 14px;
+		transition: 0.2s;
+	}
+	
+	&--big {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 54px;
+		letter-spacing: 0.4px;
+		padding: 18px 20px;
+	}
+	
+	&--grey {
+		border-radius: 2px 0 0 2px;
+		border: none;
+		background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+		
+		&:hover {
+			background-image: linear-gradient(to bottom, #f3f3f3 100%, #f9f9f9 0%);
+			
+		}
+		
+		span {
+			color: $g-color-dark;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 32px;
+			letter-spacing: 0.35px;
+		}
+		
+		i {
+			margin-left: 8px;
+			font-size: 14px;
+			color: $g-color-dark;
+			
+		}
+	}
+	
+	&--grey-2 {
+		background-image: repeating-radial-gradient(ellipse farthest-corner at left top,rgb(255, 255, 255) 0%,rgb(89, 87, 88) 100%);
+	}
+	
+	&--color-primary {
+		background-color: $g-color-primary;
+		transition: 0.2s;
+		
+		&:hover {
+			background-color: #e16d70;
+		}
+		
+		span {
+			color: #ffffff;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 32px;
+			letter-spacing: 0.38px;
+		}
+		
+		i {
+			color: white;
+			font-size: 15px;
+			margin-left: 8px;
+		}
+	}
 }
+
