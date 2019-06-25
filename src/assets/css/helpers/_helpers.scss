@@ -1,0 +1,48 @@
+.h-color-primary {
+	color: $g-color-primary;
+}
+
+.h-color-dark {
+	color: $g-color-dark;
+}
+
+.h-color-light-dark {
+	color: #9f9f9f;
+}
+
+.h-border-l-primary {
+	border-left: 12px solid $g-color-primary;
+	padding-left: 12px;
+}
+
+.h-mb20 {
+	margin-bottom: 30px;
+}
+
+.h-mr8 {
+	margin-right: 8px;
+}
+
+.h-mb60 {
+	margin-bottom: 60px;
+}
+
+.h-mb113 {
+	margin-bottom: 113px;
+}
+
+.h-mt30 {
+	margin-top: 30px;
+}
+
+.h-pb20 {
+	padding-bottom: 30px;
+}
+
+.h-text-center {
+	text-align: center;
+}
+
+.h-block-center {
+	margin: 0 auto;
+}
