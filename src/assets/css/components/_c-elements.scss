@@ -171,10 +171,6 @@
 		font-weight: 400;
 		letter-spacing: 0.35px;
 	}
-	
-	&--p16 {
-	
-	}
 }
 
 .c-promo {
@@ -286,10 +282,89 @@
 	
 	&:active {
 		.c-good__image--hover {
-			>.c-button {
+			> .c-button {
 				background-image: repeating-radial-gradient(ellipse farthest-corner at left top, rgb(89, 87, 88) 0%, rgb(255, 255, 255) 100%);
 			}
 		}
 	}
 }
 
+.c-banner {
+	height: 529px;
+	
+	&__image {
+		position: relative;
+		
+		&--first {
+			position: absolute;
+			top: 0;
+		}
+		
+		&--second {
+			position: absolute;
+			top: 0;
+		}
+	}
+	
+	&__title {
+		position: absolute;
+		top: 120px;
+		padding-left: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #ffffff;
+		
+		&--first {
+			font-size: 54px;
+			letter-spacing: 1.5px;
+			position: static;
+		}
+		
+		&--second {
+			font-size: 32px;
+			letter-spacing: 0.9px;
+			position: static;
+		}
+	}
+	
+	&__text {
+		background-color: #222224;
+		height: 529px;
+		padding: 48px 31px 43px 31px;
+	}
+	
+	&__item {
+		display: flex;
+		
+		&--img {
+			margin-right: 31px;
+			min-width: fit-content;
+			height: fit-content;
+			
+			img {
+				min-width: 45px;
+			}
+		}
+		
+		&--text {
+			display: flex;
+			flex-direction: column;
+			
+			h5 {
+				color: #fbfbfb;
+				font-size: 20px;
+				font-weight: 700;
+				letter-spacing: 0.5px;
+				padding-bottom: 15px;
+			}
+			
+			p {
+				color: #fbfbfb;
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 24px;
+				letter-spacing: 0.35px;
+			}
+		}
+	}
+}
