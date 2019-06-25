@@ -57,7 +57,11 @@
 		transition: 0.2s;
 		
 		&:hover {
-			background-color: #e16d70;
+			background-color: #d66b6b;
+		}
+		&:active {
+			background-color: #a75454;
+			
 		}
 		
 		span {
