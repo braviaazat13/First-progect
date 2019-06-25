@@ -23,8 +23,16 @@
 	margin-bottom: 30px;
 }
 
+.h-mb40 {
+	margin-bottom: 40px;
+}
+
 .h-mb60 {
 	margin-bottom: 60px;
+}
+
+.h-mb90 {
+	margin-bottom: 90px;
 }
 
 .h-mb113 {
@@ -39,6 +47,10 @@
 	margin-top: 30px;
 }
 
+.h-mt100 {
+	margin-top: 100px;
+}
+
 .h-pb20 {
 	padding-bottom: 30px;
 }
@@ -51,3 +63,6 @@
 	margin: 0 auto;
 }
 
+.h-flex {
+	display: flex;
+}
