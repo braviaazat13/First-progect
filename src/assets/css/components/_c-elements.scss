@@ -231,6 +231,7 @@
 
 .c-good {
 	cursor: pointer;
+	transition: 0.2s;
 	
 	&__image {
 		img {
@@ -242,6 +243,7 @@
 		}
 		
 		&--hover {
+			transition: 0.2s;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -277,6 +279,7 @@
 		box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 		
 		.c-good__image--hover {
+			transition: 0.2s;
 			display: flex;
 		}
 	}
