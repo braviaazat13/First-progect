@@ -230,6 +230,8 @@
 	transition: 0.2s;
 	
 	&__image {
+		color: black;
+		
 		img {
 			height: 100%;
 		}
@@ -253,16 +255,25 @@
 	
 	&__text {
 		padding-left: 15px;
+		padding-top: 21px;
 		
-		h6 {
-			color: $g-color-dark;
-			font-size: 13px;
-			font-weight: 400;
-			text-transform: uppercase;
-			padding: 19px 0 17px;
+		a {
+			h6 {
+				cursor: pointer;
+				color: $g-color-dark;
+				font-size: 13px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+			&:hover {
+				h6 {
+					letter-spacing: 1px;
+				}
+			}
 		}
 		
 		p {
+			padding-top: 21px;
 			color: $g-color-primary;
 			font-size: 16px;
 			font-weight: 700;
