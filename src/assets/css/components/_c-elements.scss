@@ -231,6 +231,7 @@
 	
 	&__image {
 		color: black;
+		transition: 0.2s;
 		
 		img {
 			height: 100%;
@@ -251,20 +252,38 @@
 			align-items: center;
 			background-color: rgba(34, 34, 34, 0.55);
 		}
+		
+		&:hover {
+			.c-good__image--hover {
+				transition: 0.2s;
+				display: flex;
+			}
+		}
+		
+		&:active {
+			.c-good__image--hover {
+				> .c-button {
+					background-image: repeating-radial-gradient(ellipse farthest-corner at left top, rgb(89, 87, 88) 0%, rgb(255, 255, 255) 100%);
+				}
+			}
+		}
 	}
 	
 	&__text {
 		padding-left: 15px;
-		padding-top: 21px;
+		margin-top: 21px;
+		cursor: default;
 		
 		a {
 			h6 {
+				transition: 0.1s;
 				cursor: pointer;
 				color: $g-color-dark;
 				font-size: 13px;
 				font-weight: 400;
 				text-transform: uppercase;
 			}
+			
 			&:hover {
 				h6 {
 					letter-spacing: 1px;
@@ -284,19 +303,6 @@
 	
 	&:hover {
 		box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-		
-		.c-good__image--hover {
-			transition: 0.2s;
-			display: flex;
-		}
-	}
-	
-	&:active {
-		.c-good__image--hover {
-			> .c-button {
-				background-image: repeating-radial-gradient(ellipse farthest-corner at left top, rgb(89, 87, 88) 0%, rgb(255, 255, 255) 100%);
-			}
-		}
 	}
 }
 
