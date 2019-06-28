@@ -36,6 +36,10 @@
 							&:hover {
 								color: #8f8f8f;
 							}
+							
+							&:active {
+								color: $g-color-primary;
+							}
 						}
 					}
 				}
@@ -110,13 +114,14 @@
 			
 			&:hover {
 				a {
-					color: #585858;
+					color: #000000;
 				}
 			}
 			
 			&:active {
 				a {
-					color: #242424;
+					//color: #000000;
+					color: $g-color-primary;
 				}
 			}
 			
