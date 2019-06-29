@@ -13,7 +13,7 @@
 		
 		#{$root} {
 			&__inner {
-				ul {
+				>ul {
 					padding: 0;
 					list-style-type: none;
 					display: flex;
@@ -21,11 +21,11 @@
 					max-width: 680px;
 					margin: 0 auto;
 					
-					li {
+					>li {
 						white-space: nowrap;
 						padding: 20px 0;
 						
-						a {
+						>a {
 							color: $g-color-dark;
 							font-size: 14px;
 							font-weight: 700;

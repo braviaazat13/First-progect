@@ -500,3 +500,53 @@
 		}
 	}
 }
+
+//* Hover menu
+
+.c-drop-menu {
+	position: absolute;
+	$root3: &;
+	
+	&--main {
+		width: 235px;
+		
+		#{$root3} {
+			&__wrapper {
+				padding: 20px;
+			}
+			
+			&__title {
+				color: #232323;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 32px;
+				text-transform: uppercase;
+				letter-spacing: 0.35px;
+				
+				&:after {
+					content: '';
+					height: 1px;
+					width: 100%;
+					background-color: #e8e8e8;
+					display: block;
+				}
+			}
+			
+			&__list {
+				list-style-type: none;
+				padding: 0;
+				
+				li {
+					a {
+						color: #646464;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 28px;
+						letter-spacing: 0.35px;
+					}
+				}
+			}
+		}
+	}
+}
+
