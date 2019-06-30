@@ -13,7 +13,7 @@
 		
 		#{$root} {
 			&__inner {
-				>ul {
+				> ul {
 					padding: 0;
 					list-style-type: none;
 					display: flex;
@@ -21,11 +21,12 @@
 					max-width: 680px;
 					margin: 0 auto;
 					
-					>li {
+					> li {
 						white-space: nowrap;
-						padding: 20px 0;
+						padding: 12px 0;
+						position: relative;
 						
-						>a {
+						> a {
 							color: $g-color-dark;
 							font-size: 14px;
 							font-weight: 700;
@@ -40,6 +41,9 @@
 							&:active {
 								color: $g-color-primary;
 							}
+						}
+						&:hover.c-drop-menu--main {
+							display: flex;
 						}
 					}
 				}
