@@ -9,18 +9,21 @@ $(function() {
 	
 //Section: Drop Menu
 	$(document).ready(function() {
-		var $menuLiElement = $('.c-section--menu').find('.c-section__inner')
+		var $menuLiElement = $('[data-reletive=here]')
 			.children().children();
 		
 		$menuLiElement.mouseover(function() {
-			$(this).find('.c-drop-menu--main').addClass('h-flex');
+			$(this).find('.c-drop-menu').addClass('h-flex');
 			
 		});
 		
 		$menuLiElement.mouseleave(function() {
-			$(this).find('.c-drop-menu--main').removeClass('h-flex');
+			$(this).find('.c-drop-menu').removeClass('h-flex');
 		});
 	});
 	// End of Section: Drop Menu
 	
 });
+
+
+//$('.c-section--menu').find('.c-section__inner')
