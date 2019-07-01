@@ -9,8 +9,7 @@ $(function() {
 	
 //Section: Drop Menu
 	$(document).ready(function() {
-		var $menuLiElement = $('[data-reletive=here]')
-			.children().children();
+		var $menuLiElement = $('[data-reletive=here]');
 		
 		$menuLiElement.mouseover(function() {
 			$(this).find('.c-drop-menu').addClass('h-flex');

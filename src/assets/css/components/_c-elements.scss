@@ -505,6 +505,7 @@
 
 .c-drop-menu {
 	position: absolute;
+	z-index: 1;
 	$root3: &;
 	
 	&--main {
@@ -584,5 +585,16 @@
 			position: absolute;
 		}
 	}
+	
+	&--browse {
+		top: 36px;
+		left: -2px;
+		width: 262px;
+		
+		#{$root3} {
+			&__wrapper {
+				width: 100%;
+			}
+		}
+	}
 }
-
