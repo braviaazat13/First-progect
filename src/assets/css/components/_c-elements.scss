@@ -727,3 +727,31 @@
 		}
 	}
 }
+
+.c-filter {
+	height: 74px;
+	
+	&__title {
+		color: #6f6e6e;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 20px;
+		text-transform: uppercase;
+		padding: 16px 0;
+	}
+}
+
+.c-sort {
+	width: 100%;
+	height: 50px;
+	background-color: #f3f3f3;
+	display: flex;
+	align-items: center;
+	
+	&__inner {
+		width: 269px;
+		height: 30px;
+		background-color: white;
+		margin-left: 22px;
+	}
+}
