@@ -646,6 +646,7 @@
 		}
 	}
 }
+
 //* End of Hover menu
 
 .c-product-cart {
@@ -713,19 +714,16 @@
 }
 
 .c-categories {
-	
-	span, a {
+	a {
 		color: #636363;
-		&:last-child {
-			color: $g-color-primary;
-		}
-	}
-	
-	span, a {
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 20px;
 		text-transform: uppercase;
 		cursor: pointer;
+		
+		&:last-child {
+			color: $g-color-primary;
+		}
 	}
 }
