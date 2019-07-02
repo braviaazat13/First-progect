@@ -93,7 +93,7 @@
 		#{$root} {
 			&__inner {
 				display: flex;
-				justify-content: space-around;
+				justify-content: space-between;
 				align-items: center;
 				min-height: 148px;
 				
@@ -106,6 +106,39 @@
 				}
 			}
 		}
+	}
+	
+	//* Product categories
+	&--product-cat {
+		width: 243px;
+		
+		#{$root} {
+			&__list {
+				display: none;
+				flex-direction: column;
+				padding: 22px 17px;
+				
+				a {
+					color: #6f6e6e;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 33px;
+					
+					&:hover {
+						color: #d66b6b;
+					}
+					
+					&:active {
+						color: #a75454;
+					}
+				}
+				
+				&.is-active {
+					display: flex;
+				}
+			}
+		}
+		
 	}
 }
 
