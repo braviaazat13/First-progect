@@ -22,6 +22,17 @@ $(function() {
 	});
 	// End of Section: Drop Menu
 	
+	//Section: Drop List
+	$(document).ready(function() {
+		var $parentElement = $('[data-reletive2=here]');
+		
+		$parentElement.on('click', function() {
+			$(this).toggleClass('is-active');
+			$(this).siblings('.c-section__list').toggleClass('is-active');
+		})
+	})
+	//End of Section: Drop List
+	
 });
 
 //$('.c-section--menu').find('.c-section__inner')
