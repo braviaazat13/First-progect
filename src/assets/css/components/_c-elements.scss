@@ -755,3 +755,17 @@
 		margin-left: 22px;
 	}
 }
+
+.c-product {
+	&__pagination {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		&--first {
+			width: 261px;
+			height: 44px;
+			background-color: #f3f3f3;
+		}
+	}
+}
