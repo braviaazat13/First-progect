@@ -351,6 +351,11 @@
 		background-color: #222224;
 		height: 529px;
 		padding: 48px 31px 43px 31px;
+		
+		&--short {
+			height: 341px;
+			padding: 90px 0 0;
+		}
 	}
 	
 	&__item {
@@ -366,7 +371,7 @@
 			}
 		}
 		
-		&--text {
+		span {
 			display: flex;
 			flex-direction: column;
 			
@@ -386,6 +391,22 @@
 				letter-spacing: 0.35px;
 			}
 		}
+		
+		&--short {
+			flex-direction: column;
+			align-items: center;
+			height: 100%;
+			max-width: 308px;
+			margin: 0 auto;
+			
+			img {
+				margin-bottom: 23px;
+			}
+		}
+	}
+	
+	&__text-block {
+		text-align: center;
 	}
 }
 
