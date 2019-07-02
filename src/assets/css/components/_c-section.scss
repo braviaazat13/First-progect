@@ -42,6 +42,7 @@
 								color: $g-color-primary;
 							}
 						}
+						
 						&:hover.c-drop-menu--main {
 							display: flex;
 						}
@@ -83,7 +84,33 @@
 			}
 		}
 	}
+	
+	//* Categories
+	&--categories {
+		background-color: #f8f3f4;
+		width: 100%;
+		
+		#{$root} {
+			&__inner {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				min-height: 148px;
+				
+				h3 {
+					color: $g-color-primary;
+					font-size: 24px;
+					font-weight: 400;
+					line-height: 20px;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
 }
+
+
+//* Footer
 
 .c-footer {
 	&__text {

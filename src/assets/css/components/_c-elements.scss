@@ -527,7 +527,6 @@
 }
 
 //* Hover menu
-
 .c-drop-menu {
 	position: absolute;
 	z-index: 1;
@@ -647,6 +646,7 @@
 		}
 	}
 }
+//* End of Hover menu
 
 .c-product-cart {
 	user-select: none;
@@ -709,5 +709,23 @@
 				color: black;
 			}
 		}
+	}
+}
+
+.c-categories {
+	
+	span, a {
+		color: #636363;
+		&:last-child {
+			color: $g-color-primary;
+		}
+	}
+	
+	span, a {
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 20px;
+		text-transform: uppercase;
+		cursor: pointer;
 	}
 }
