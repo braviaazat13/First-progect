@@ -74,6 +74,15 @@
 			}
 		}
 	}
+	
+	&__cart {
+		height: 45px;
+		max-width: 355px;
+		padding: 10px 16px;
+		border: none;
+		margin: 10px 0;
+		background-color: #f6f6f6;
+	}
 }
 
 .c-header {
