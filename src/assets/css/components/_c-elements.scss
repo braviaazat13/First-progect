@@ -818,7 +818,7 @@
 				
 				th {
 					text-align: center;
-					padding-bottom: 20px;
+					padding: 90px 0 20px;
 					color: $g-color-dark;
 					font-size: 13px;
 					font-weight: 700;
@@ -834,9 +834,12 @@
 			
 			&__body {
 				margin: 22px 0;
+				border-bottom: 1px solid #eaeaea;
 				
 				td {
 					text-align: center;
+					padding: 20px 0;
+					
 					
 					input {
 						width: 54px;
