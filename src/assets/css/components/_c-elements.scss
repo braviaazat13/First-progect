@@ -80,8 +80,48 @@
 		max-width: 355px;
 		padding: 10px 16px;
 		border: none;
-		margin: 10px 0;
 		background-color: #f6f6f6;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none
+	}
+	
+	&-cart {
+		margin: 60px 0 80px;
+		
+		&__title {
+			color: $g-color-dark;
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+		&__total {
+			background-color: #f5f3f3;
+			width: 100%;
+			min-height: 214px;
+			padding: 40px;
+		}
+		
+		&__block-text {
+			width: 100%;
+			border-bottom: 1px solid #e2e2e2;
+			text-align: right;
+			
+			h4 {
+				color: #4a4a4a;
+				font-size: 11px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+			
+			h3 {
+				color: $g-color-dark;
+				font-size: 16px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
 	}
 }
 
