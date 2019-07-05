@@ -814,7 +814,6 @@
 }
 
 .c-filter {
-	height: 74px;
 	
 	&__title {
 		color: #6f6e6e;
@@ -822,7 +821,33 @@
 		font-weight: 700;
 		line-height: 20px;
 		text-transform: uppercase;
-		padding: 16px 0;
+		padding: 16px 0 25px;
+	}
+	
+	&__tags {
+		min-width: 180px;
+		
+		
+		a {
+			color: #6f6e6e;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			border-right: 1px solid #dfdfdf;
+			padding: 0 5px;
+			
+			&:hover {
+				color: $g-color-primary;
+			}
+			
+			&:active {
+				color: #a75454;
+			}
+			
+			&:last-child {
+				border-right: none;
+			}
+		}
 	}
 }
 
