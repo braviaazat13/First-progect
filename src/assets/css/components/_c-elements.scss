@@ -83,11 +83,21 @@
 		background-color: #f6f6f6;
 		appearance: none;
 		-moz-appearance: none;
-		-webkit-appearance: none
+		-webkit-appearance: none;
 	}
 	
 	&-cart {
 		margin: 60px 0 80px;
+		
+		&--number {
+			&::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+			}
+			
+			&::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+			}
+		}
 		
 		&__title {
 			color: $g-color-dark;
@@ -851,6 +861,7 @@
 	
 	&__checkbox {
 		cursor: default;
+		
 		input {
 			width: 13px;
 			height: 13px;
