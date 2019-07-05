@@ -827,7 +827,6 @@
 	&__tags {
 		min-width: 180px;
 		
-		
 		a {
 			color: #6f6e6e;
 			font-size: 14px;
@@ -846,6 +845,32 @@
 			
 			&:last-child {
 				border-right: none;
+			}
+		}
+	}
+	
+	&__checkbox {
+		cursor: default;
+		input {
+			width: 13px;
+			height: 13px;
+			border: none;
+			background-color: #ffffff;
+			position: relative;
+			top: 2px;
+			cursor: pointer;
+		}
+		
+		span {
+			color: #6f6e6e;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+			text-transform: uppercase;
+			margin-right: 15px;
+			
+			&:last-child {
+				margin-right: 0;
 			}
 		}
 	}
