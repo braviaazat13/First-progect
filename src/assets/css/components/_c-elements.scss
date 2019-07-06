@@ -991,10 +991,12 @@
 }
 
 .c-checkout {
+	border-bottom: 1px solid #e8e8e8;
+	
 	&__parent {
+		user-select: none;
 		padding: 30px 0;
 		cursor: pointer;
-		border-bottom: 1px solid #e8e8e8;
 		
 		h3 {
 			color: $g-color-dark;
@@ -1003,5 +1005,63 @@
 			text-transform: uppercase;
 			cursor: pointer;
 		}
+		
+		&.is-active {
+			border-bottom: none;
+		}
+	}
+	
+	&__title {
+		h3 {
+			color: $g-color-dark;
+			font-size: 13px;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding-bottom: 15px;
+		}
+		
+		h4 {
+			color: #b3b2b2;
+			font-size: 13px;
+			font-weight: 400;
+		}
+	}
+	
+	&__radio {
+		div {
+			input {
+				width: 14px;
+				height: 14px;
+				padding-bottom: 20px;
+				
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+			
+			span {
+				color: $g-color-dark;
+				font-size: 12px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+	
+	&__drop {
+		display: none;
+		margin-left: 35px;
+		
+		form {
+			button {
+				width: 180px;
+			}
+		}
+		
+		&.is-active {
+			display: block;
+			padding-bottom: 60px;
+		}
 	}
 }
+
