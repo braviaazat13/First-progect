@@ -20,7 +20,7 @@
 }
 
 .h-mb20 {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .h-mb30 {
@@ -51,8 +51,16 @@
 	margin-right: 8px;
 }
 
+.h-mr20 {
+	margin-right: 20px;
+}
+
 .h-mt10 {
 	margin-top: 10px;
+}
+
+.h-mt20 {
+	margin-top: 20px;
 }
 
 .h-mt30 {
@@ -67,11 +75,19 @@
 	margin-top: 100px;
 }
 
+.h-ml10 {
+	margin-left: 10px;
+}
+
 .h-ml50 {
 	margin-left: 50px;
 }
 
 .h-pb20 {
+	padding-bottom: 20px;
+}
+
+.h-pb30 {
 	padding-bottom: 30px;
 }
 
@@ -81,6 +97,18 @@
 
 .h-text-center {
 	text-align: center;
+}
+
+.h-uppercase {
+	text-transform: uppercase;
+}
+
+.h-fw300 {
+	font-weight: 300;
+}
+
+.h-bold {
+	font-weight: bold;
 }
 
 .h-block-center {
