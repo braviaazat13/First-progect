@@ -30,14 +30,14 @@ $(function() {
 			
 			if ($(this).hasClass('is-active')) {
 				$(this).removeClass('is-active');
-				$(this).siblings('.c-section__list').removeClass('is-active');
+				$(this).siblings('.js-drop').removeClass('is-active');
 			}
 			
 			else {
 				$($parentElement).removeClass('is-active');
-				$($parentElement).siblings('.c-section__list').removeClass('is-active');
+				$($parentElement).siblings('.js-drop').removeClass('is-active');
 				$(this).addClass('is-active');
-				$(this).siblings('.c-section__list').addClass('is-active');
+				$(this).siblings('.js-drop').addClass('is-active');
 			}
 		});
 	});
