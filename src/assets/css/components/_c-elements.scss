@@ -583,6 +583,10 @@
 				padding: 11px 28px;
 				border-radius: 23px 0 0 23px;
 				border: none;
+				&:focus {
+					box-shadow: 0 0 5px 0 $g-color-primary;
+					border-radius: 23px 0 0 23px;
+				}
 			}
 			
 			button {
@@ -595,6 +599,7 @@
 				}
 			}
 		}
+		
 	}
 }
 
