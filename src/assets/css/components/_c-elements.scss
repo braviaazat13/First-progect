@@ -175,20 +175,17 @@
 	height: 613px;
 	
 	&__item {
-		position: relative;
-		top: -50px;
 		z-index: -1;
-		
-		img {
-			//background-size: cover;
-			//background-position: center;
-			//background-repeat: no-repeat;
-		}
+		background-image: url("../img/bg/promo_1.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 665px;
 	}
 	
 	&__text {
 		position: absolute;
-		top: 276px;
+		top: 420px;
 	}
 }
 
