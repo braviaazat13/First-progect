@@ -119,6 +119,12 @@
 	margin: 0 auto;
 }
 
+.h-visible {
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
+}
+
 .h-flex {
 	display: flex;
 }

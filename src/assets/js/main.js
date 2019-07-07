@@ -12,11 +12,11 @@ $(function() {
 		var $menuLiElement = $('[data-reletive=here]');
 		
 		$menuLiElement.mouseover(function() {
-			$(this).find('.c-drop-menu').addClass('h-flex');
+			$(this).find('.c-drop-menu').addClass('h-visible');
 		});
 		
 		$menuLiElement.mouseleave(function() {
-			$(this).find('.c-drop-menu').removeClass('h-flex');
+			$(this).find('.c-drop-menu').removeClass('h-visible');
 		});
 		
 	});
