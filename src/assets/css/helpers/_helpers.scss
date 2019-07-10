@@ -67,6 +67,10 @@
 	margin-top: 30px;
 }
 
+.h-mt40 {
+	margin-top: 40px;
+}
+
 .h-mt60 {
 	margin-top: 60px;
 }
@@ -113,6 +117,12 @@
 
 .h-block-center {
 	margin: 0 auto;
+}
+
+.h-visible {
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
 }
 
 .h-flex {
