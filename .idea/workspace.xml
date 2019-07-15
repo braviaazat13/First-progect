@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a03de793-400a-4bb6-a9d6-dbd4cb6c968b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/sections/big-banner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/single_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/single_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/assets/css/components/_c-elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/assets/css/components/_c-elements.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/sections/big-banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/sections/big-banner.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,26 +19,38 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/sections/big-banner.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/single_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/sections/big-banner.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="126">
+                  <caret line="5" column="166" selection-start-line="5" selection-start-column="166" selection-end-line="5" selection-end-column="166" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/assets/css/components/_c-elements.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="429">
+                  <caret line="1130" column="2" selection-start-line="1130" selection-start-column="2" selection-end-line="1130" selection-end-column="2" />
+                  <folding>
+                    <element signature="e#8#372#0" />
+                    <element signature="e#382#2199#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,8 +58,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/sections/big-banner.html" />
         <option value="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/single_page.html" />
+        <option value="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/assets/css/components/_c-elements.scss" />
+        <option value="$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/sections/big-banner.html" />
       </list>
     </option>
   </component>
@@ -64,6 +77,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,13 +151,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/First quarter/First progect(no adaptive)/node_modules/gulp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/First quarter/First progect(no adaptive)/package.json" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -162,7 +176,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gulp.js.copy-assets">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="copy-assets" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/First quarter/First progect(no adaptive)/gulpfile.js</gulpfile>
+      <tasks>
+        <task>copy-assets</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/First quarter/First progect(no adaptive)/gulpfile.js</gulpfile>
+      <tasks>
+        <task>watch</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/First quarter/First progect(no adaptive)/package.json" />
       <command value="run" />
@@ -176,6 +221,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.serve" />
+        <item itemvalue="Gulp.js.watch" />
+        <item itemvalue="Gulp.js.copy-assets" />
       </list>
     </recent_temporary>
   </component>
@@ -189,27 +236,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562969953054</updated>
-      <workItem from="1562969961093" duration="1655000" />
+      <workItem from="1562969961093" duration="2395000" />
+      <workItem from="1563193780006" duration="92000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1655000" />
+    <option name="totallyTimeSpent" value="2487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="npm" sideWeight="0.5011655" side_tool="true" weight="0.1762481" />
-      <window_info id="Gulp" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988345" visible="true" weight="0.1762481" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.1785174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Gulp" order="2" sideWeight="0.5023474" side_tool="true" weight="0.1785174" />
+      <window_info id="npm" order="3" sideWeight="0.5034965" side_tool="true" weight="0.1785174" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286385" />
@@ -217,10 +260,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,17 +282,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/sections/big-banner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/single_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/assets/css/components/_c-elements.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="1130" column="2" selection-start-line="1130" selection-start-column="2" selection-end-line="1130" selection-end-column="2" />
+          <folding>
+            <element signature="e#8#372#0" />
+            <element signature="e#382#2199#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/First quarter/First progect(no adaptive)/src/templates/sections/big-banner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="5" column="166" selection-start-line="5" selection-start-column="166" selection-end-line="5" selection-end-column="166" />
         </state>
       </provider>
     </entry>

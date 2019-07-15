@@ -162,10 +162,6 @@
 				height: 29px;
 				cursor: pointer;
 				transition: 0.2s;
-				
-				&:hover {
-					//zoom: 103%;
-				}
 			}
 		}
 	}
@@ -379,8 +375,6 @@
 }
 
 .c-banner {
-	//height: 529px;
-	
 	&__image {
 		position: relative;
 		
@@ -580,6 +574,7 @@
 				padding: 11px 28px;
 				border-radius: 23px 0 0 23px;
 				border: none;
+				
 				&:focus {
 					box-shadow: 0 0 5px 0 $g-color-primary;
 					border-radius: 23px 0 0 23px;
@@ -723,6 +718,7 @@
 		}
 	}
 }
+
 //* End of Hover menu
 
 .c-product-cart {
@@ -1127,5 +1123,11 @@
 				color: #a75454;
 			}
 		}
+	}
+}
+
+.c-slider-s_page {
+	&__item {
+	
 	}
 }
