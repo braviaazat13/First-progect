@@ -1,7 +1,7 @@
 /**
  * Section: jQuery
  */
-
+ 
 $(function() {
 	
 	//@@include('global/_global.js')
@@ -12,11 +12,11 @@ $(function() {
 		var $menuLiElement = $('[data-reletive=here]');
 		
 		$menuLiElement.mouseover(function() {
-			$(this).find('.c-drop-menu').addClass('h-flex');
+			$(this).find('.c-drop-menu').addClass('h-visible');
 		});
 		
 		$menuLiElement.mouseleave(function() {
-			$(this).find('.c-drop-menu').removeClass('h-flex');
+			$(this).find('.c-drop-menu').removeClass('h-visible');
 		});
 		
 	});
@@ -30,14 +30,14 @@ $(function() {
 			
 			if ($(this).hasClass('is-active')) {
 				$(this).removeClass('is-active');
-				$(this).siblings('.c-section__list').removeClass('is-active');
+				$(this).siblings('.js-drop').removeClass('is-active');
 			}
 			
 			else {
 				$($parentElement).removeClass('is-active');
-				$($parentElement).siblings('.c-section__list').removeClass('is-active');
+				$($parentElement).siblings('.js-drop').removeClass('is-active');
 				$(this).addClass('is-active');
-				$(this).siblings('.c-section__list').addClass('is-active');
+				$(this).siblings('.js-drop').addClass('is-active');
 			}
 		});
 	});
