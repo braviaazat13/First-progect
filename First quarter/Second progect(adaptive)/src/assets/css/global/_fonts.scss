@@ -3,12 +3,16 @@
 
 //Global Font-Size
 html {
-	font-family:$g-font-family-base;
+	font-family: $g-font-family-base;
 	font-size: $g-font-size-base;
 	transition: font-size ease $g-value-animation-duration;
 	
 	@media screen and (max-width: 768px) {
 		font-size: $g-font-size-base - 2px;
+	}
+	
+	@media screen and (max-width: 320px) {
+		font-size: $g-font-size-base - 4px;
 	}
 }
 
